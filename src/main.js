@@ -3,6 +3,7 @@ import { renderImages, showError, showLoader, hideLoader } from './js/render-fun
 
 const form = document.querySelector('.search-form');
 const input = document.querySelector('.search-input');
+const gallery = document.querySelector('.gallery');
 
 form.addEventListener('submit', async (event) => {
   event.preventDefault();
