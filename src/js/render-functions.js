@@ -42,3 +42,8 @@ export function hideLoader() {
   const loader = document.querySelector('.loader');
   loader.style.display = 'none';
 }
+
+export function createGallery(images) {
+  return images.map(({urls:{small, full}, alt_description}) => `
+  <li><a href="${small}"><img src="${small}" alt="${alt_description}"></a></li>`).join('');
+}

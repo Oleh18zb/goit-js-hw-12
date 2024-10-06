@@ -1,3 +1,4 @@
+
 import { fetchImages } from './js/pixabay-api.js';
 import { renderImages, showError, showLoader, hideLoader } from './js/render-functions.js';
 
