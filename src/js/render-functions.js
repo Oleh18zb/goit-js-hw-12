@@ -45,5 +45,5 @@ export function hideLoader() {
 
 export function createGallery(images) {
   return images.map(({urls:{small, full}, alt_description}) => `
-  <li><a href="${small}"><img src="${small}" alt="${alt_description}"></a></li>`).join('');
+  <li><a href="${full}"><img data-source="${full}" src="${small}" alt="${alt_description}"></a></li>`).join('');
 }

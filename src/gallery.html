@@ -7,6 +7,16 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
+
+
+    <form id="searchForm">
+        <label for="name">Enter city</label>
+        <input type="text" name="name" />
+        <button type="submit">Search</button>
+      </form>
+
+
+      
     <a href="./index.html">Back</a>
     <section class="gallery-section">
       <div class="container">
@@ -14,6 +24,7 @@
           <input type="text" name="query" class="search-input" />
           <button type="submit" class="search-btn">Search</button>
         </form>
+        <span class="new_loader is_hidden"></span>
         <ul class="gallery js-gallery"></ul>
         <div id="tui-pagination-container" class="tui-pagination"></div>
       </div>
